@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radiator math - the room becomes watts, the rating becomes honest, and the sections become a count</title>
+<style>
+  :root { --accent: #b0552f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #f8f5f2; color: #2c2620; line-height: 1.55; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2.4rem; margin: 0 0 12px; color: var(--accent); }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 10px 0 8px; padding: 12px 22px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 6px; font-size: 1.05rem; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .norms { background: #fff; border: 1px solid #e2d8cd; border-left: 4px solid var(--accent); border-radius: 6px; padding: 14px 18px; margin-top: 12px; }
+  footer { max-width: 720px; margin: 0 auto; padding: 0 20px 40px; font-size: 0.85rem; color: #b0a494; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Radiator math</h1>
+  <p>A radiator bought by eye heats the hallway, not the room. Radiator math turns the room's dimensions into the watts it asks for on a labeled scale, corrects the catalog's rating for the water temperature your system actually runs, and turns the needed watts into a section count. Exact arithmetic, every borrowed number labeled.</p>
+  <a class="cta" href="app.html">Open the calculators</a>
+  <h2>The three tools</h2>
+  <ul>
+    <li><strong>Room plan</strong> - length, width, height and a labeled watts-per-cubic-meter factor become the watts and BTU the room asks for.</li>
+    <li><strong>Delta plan</strong> - flow, return and room temperatures become the real mean-water difference, and the labeled correction table turns the catalog rating into honest output.</li>
+    <li><strong>Section plan</strong> - the needed watts against the output per section become a section count and the headroom it leaves.</li>
+  </ul>
+  <h2>Labeled norms</h2>
+  <div class="norms">
+    Labeled norms: 30 to 50 W per cubic meter by insulation, a delta-T correction table (50 C: full, 40 C: three quarters, 30 C: about half, 20 C: under a third, below: a trickle) - all illustrative. Real heat loss moves with windows, walls and weather. This is arithmetic, not a design: a heating engineer sizes the real system, and the manufacturer rates the real hardware.
+  </div>
+</main>
+<footer>Built by the app factory. <a href="https://github.com/iLanis-agent/radiatormath">Source on GitHub</a></footer>
+</body>
+</html>
